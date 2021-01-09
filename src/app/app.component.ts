@@ -1,3 +1,4 @@
+import { AuthService } from './services/auth.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +7,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-auth';
+  title = 'Angular Auth';
+
+  constructor(private _auth: AuthService) {
+  }
+
+
+  public logOut() {
+    this._auth.logoutUser();
+  }
+
+  public isLoggedIn() {
+    return this._auth.isLoggedIn();
+  }
 }

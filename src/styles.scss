@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+/* MATERIAL */
+::ng-deep.mat-snack-bar-container {
+  height: 75px;
+}
+
+
+
+.success-snackbar {
+  background-color: #91F5AD;
+}
+
+.error-snackbar {
+  background-color: #8B2635;
+}
+
+
